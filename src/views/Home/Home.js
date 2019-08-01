@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import HeaderMenu from '../../components/HeaderMenu/HeaderMenu';
+import Shouyedibu from '../../components/Shouyedibu/Shouyedibu';
+import Cailiao from '../../components/Shouyeneirong/Cailiao/Cailiao';
+import Caipu from '../../components/Shouyeneirong/Caipu/Caipu';
+import Jiankan from '../../components/Shouyeneirong/Jiankan/Jiankan';
+import Jinrituijian from '../../components/Shouyeneirong/Jinrituijian/Jinrituijian';
 import Axios from '../../model/Axios';
 
 export default class Home extends Component {
@@ -27,8 +32,16 @@ export default class Home extends Component {
     render() {
 
         return (
+       <div>
             <HeaderMenu/>
-              
+            <Jinrituijian/>
+            <Caipu/>
+            <Cailiao/>
+            <Jiankan/>
+            <Shouyedibu/>
+    
+       </div>
+
         )
     }
 }
